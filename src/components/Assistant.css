@@ -1,0 +1,31 @@
+/* Assistant.css */
+
+.avatar {
+    width: 50%;
+    height: 50vh;
+    background-image: url('./avatar.png'); /* Replace with the actual path or URL */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    top: calc(100% - 60px); /* Initial position at the bottom of the assistant */
+    left: 10px; /* Initial position at the left side */
+  
+    /* CSS animation */
+    animation-name: moveAvatar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0; /* Start with opacity 0 (hidden) */
+  }
+  
+  @keyframes moveAvatar {
+    0% {
+      opacity: 0; /* Hidden at the start */
+      top: calc(100% - 60px); /* Starting position */
+    }
+    100% {
+      opacity: 1; /* Fully visible when the animation completes */
+      top: 10px; /* Move to the top position */
+    }
+  }
+  

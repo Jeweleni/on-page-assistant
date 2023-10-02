@@ -1,9 +1,9 @@
-// Button.js
 import React from 'react';
+import './button.css';
 
 function Button() {
   return (
-    <button>
+    <button className='btn'>
       Click Me
     </button>
   );
